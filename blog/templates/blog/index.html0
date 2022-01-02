@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    my Blog
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock%}
+
+{% block content %}
+    <header id="main-navigation">
+        <h1><a href="">Jason's Blog</a></h1>
+        <nav>
+            <a href="">All Posts    
+        </nav>
+    </header>
+    <sestion id="welcome">
+        <header>
+            <img src="" alt="Max - The Author of This Blog" />
+            <h2>Jason's BLOG</h2>
+        </header>
+    <p> Hi, I am Jason and I love to blog about travel the world!</p>
+    </section>
+
+    <section id="lastest-posts">
+        <h2> My Latest Thoughts</h2>
+
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountain hiking" />
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>The Sun rise at cadillac mountain submmit was spetacular!! </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>What I Do</h2>
+        <p>
+            I am a computer engineering, I love administratoring system, storage and databases. I also love programming.
+        </p>
+        <p>
+            My goal is to keep on learning computer technologies.
+        </p>
+    </section>
+
+{% endblock %}
